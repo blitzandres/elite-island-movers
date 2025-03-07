@@ -7,7 +7,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Elite Island Movers provides top-rated moving services in Victoria, BC. Affordable, reliable, and professional local & long-distance movers.">
-    <meta name="keywords" content="Victoria BC moving vehicle rental, affordable movers in Langford, Moving Company Victoria BC, Movers in Victoria, Island Moving Services, Local Movers, Long-Distance Movers, Furniture Movers, Victoria BC Moving Experts, Best Movers in Vancouver Island">
+    <meta name="keywords" content="Victoria BC moving services, reliable movers in Victoria, moving company Vancouver Island, moving truck rentals Victoria BC, affordable movers Victoria, long-distance moving Victoria BC, furniture movers Victoria, local movers Vancouver Island, top-rated Victoria movers, best moving company BC">
     <meta name="author" content="Elite Island Movers">
     <meta name="robots" content="index, follow">
     
@@ -142,6 +142,9 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     }
 </style>
+<meta name="http-equiv" content="content-type=text/html;charset=UTF-8">
+<meta name="cookie" content="path=/; max-age=31536000; SameSite=Lax; Secure">
+<meta name="history" content="true">
 </head>
 <body>
     <header>
@@ -158,9 +161,19 @@
 <section id="gallery">
     <h2>Gallery</h2>
     <div class="image-container">
-    <img src="eim1.png" alt="Professional Movers">
-    <img src="eim2.png" alt="Reliable Moving Services">
+    <img id="image-display" src="eim1.png" alt="Professional Movers" title="Elite Island Movers - Reliable, Affordable Moving Services in Victoria, BC" width="1024" height="1024">
 </div>
+
+<script>
+    // Image rotation logic
+    const images = ["eim1.png", "eim2.png"];
+    let currentImage = 0;
+
+    setInterval(() => {
+        currentImage = (currentImage + 1) % images.length;
+        document.getElementById("image-display").src = images[currentImage];
+    }, 5000); // Changes image every 5 seconds
+</script>
 </section>
         <section id="about">
             <h2>Experienced Movers You Can Trust</h2>
